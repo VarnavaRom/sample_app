@@ -38,6 +38,7 @@ end
 
 group :development, :test do
 
+  gem 'spork', github: 'sporkrb/spork'
   gem 'spork-rails'
   gem 'guard-spork', '2.1.0'
   gem 'childprocess'
