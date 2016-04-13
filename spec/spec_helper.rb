@@ -13,7 +13,7 @@ Spork.prefork do
   require 'rspec/rails'
   require 'rspec/autorun'
 
-  Dir[Rails.root.join("spec/suport/**/*.rb")].each {|f| require f}
+  Dir[Rails.root.join("spec/support/*.rb")].each {|f| require f}
 
   ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
@@ -155,4 +155,5 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
 end
